@@ -1,0 +1,562 @@
+[
+    {
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+        "title": "Classic Cotton T-Shirt",
+        "description": "A comfortable and durable t-shirt made from 100% premium cotton. Perfect for everyday wear.",
+        "price": 1999,
+        "image": "https://picsum.photos/seed/tshirt/400/300",
+        "variants": {
+            "color": ["Red", "Blue", "Black"],
+            "size": ["S", "M", "L", "XL"]
+        },
+        "stock": 150,
+        "createdAt": "2023-01-15T10:00:00Z",
+        "updatedAt": "2023-10-20T14:30:00Z"
+    },
+    {
+        "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef0",
+        "title": "Wireless Bluetooth Headphones",
+        "description": "Experience immersive sound with these high-quality wireless Bluetooth headphones. Long battery life and noise-cancellation.",
+        "price": 7950,
+        "image": "https://picsum.photos/seed/headphones/400/300",
+        "variants": {
+            "color": ["Black", "White", "Silver"],
+            "size": ["One Size"]
+        },
+        "stock": 75,
+        "createdAt": "2023-02-20T11:00:00Z",
+        "updatedAt": "2023-11-01T09:15:00Z"
+    },
+    {
+        "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef01",
+        "title": "Stainless Steel Water Bottle",
+        "description": "Stay hydrated with this eco-friendly stainless steel water bottle. Keeps drinks cold for 24 hours or hot for 12 hours.",
+        "price": 2500,
+        "image": "https://picsum.photos/seed/bottle/400/300",
+        "variants": {
+            "color": ["Silver", "Matte Black", "Ocean Blue"],
+            "size": ["500ml", "750ml"]
+        },
+        "stock": 200,
+        "createdAt": "2023-03-10T08:30:00Z",
+        "updatedAt": "2023-03-10T08:30:00Z"
+    },
+    {
+        "id": "d4e5f6a7-b8c9-0123-4567-890abcdef012",
+        "title": "Leather Laptop Sleeve",
+        "description": "Protect your laptop in style with this genuine leather sleeve. Fits most 13-inch laptops.",
+        "price": 4599,
+        "image": "https://picsum.photos/seed/laptopsleeve/400/300",
+        "variants": {
+            "color": ["Brown", "Black"],
+            "size": ["13-inch", "15-inch"]
+        },
+        "stock": 90,
+        "createdAt": "2023-04-05T16:20:00Z",
+        "updatedAt": "2023-09-25T10:05:00Z"
+    },
+    {
+        "id": "e5f6a7b8-c9d0-1234-5678-90abcdef0123",
+        "title": "Organic Green Tea",
+        "description": "A refreshing and healthy blend of organic green tea leaves. Rich in antioxidants.",
+        "price": 1275,
+        "image": "https://picsum.photos/seed/greentea/400/300",
+        "variants": {
+            "color": ["N/A"],
+            "size": ["50g", "100g"]
+        },
+        "stock": 300,
+        "createdAt": "2023-05-01T09:00:00Z",
+        "updatedAt": "2023-05-01T09:00:00Z"
+    },
+    {
+        "id": "f6a7b8c9-d0e1-2345-6789-0abcdef01234",
+        "title": "Running Shoes",
+        "description": "Lightweight and comfortable running shoes designed for optimal performance and support.",
+        "price": 12000,
+        "image": "https://picsum.photos/seed/runningshoes/400/300",
+        "variants": {
+            "color": ["Neon Green", "Stealth Black", "Sky Blue"],
+            "size": ["US 8", "US 9", "US 10", "US 11"]
+        },
+        "stock": 60,
+        "createdAt": "2023-06-18T13:45:00Z",
+        "updatedAt": "2023-11-10T11:20:00Z"
+    },
+    {
+        "id": "a7b8c9d0-e1f2-3456-7890-abcdef012345",
+        "title": "Yoga Mat",
+        "description": "Eco-friendly, non-slip yoga mat for your daily practice. Provides excellent cushioning and grip.",
+        "price": 3550,
+        "image": "https://picsum.photos/seed/yogamat/400/300",
+        "variants": {
+            "color": ["Purple", "Teal", "Pink"],
+            "size": ["Standard", "Extra Long"]
+        },
+        "stock": 110,
+        "createdAt": "2023-07-22T07:10:00Z",
+        "updatedAt": "2023-07-22T07:10:00Z"
+    },
+    {
+        "id": "b8c9d0e1-f2a3-4567-8901-bcdef0123456",
+        "title": "Smart Home Hub",
+        "description": "Control all your smart home devices from one central hub. Compatible with Alexa, Google Assistant, and Apple HomeKit.",
+        "price": 9999,
+        "image": "https://picsum.photos/seed/smarthub/400/300",
+        "variants": {
+            "color": ["White", "Graphite"],
+            "size": ["One Size"]
+        },
+        "stock": 40,
+        "createdAt": "2023-08-03T18:00:00Z",
+        "updatedAt": "2023-10-15T12:00:00Z"
+    },
+    {
+        "id": "c9d0e1f2-a3b4-5678-9012-cdef01234567",
+        "title": "Gourmet Coffee Beans",
+        "description": "Artisanal roasted coffee beans from Ethiopia. Medium roast with notes of chocolate and citrus.",
+        "price": 1825,
+        "image": "https://picsum.photos/seed/coffeebeans/400/300",
+        "variants": {
+            "color": ["N/A"],
+            "size": ["250g", "500g", "1kg"]
+        },
+        "stock": 250,
+        "createdAt": "2023-09-11T10:30:00Z",
+        "updatedAt": "2023-09-11T10:30:00Z"
+    },
+    {
+        "id": "d0e1f2a3-b4c5-6789-0123-def012345678",
+        "title": "Portable Power Bank",
+        "description": "High-capacity portable power bank to keep your devices charged on the go. 20000mAh capacity.",
+        "price": 3995,
+        "image": "https://picsum.photos/seed/powerbank/400/300",
+        "variants": {
+            "color": ["Black", "Red"],
+            "size": ["20000mAh"]
+        },
+        "stock": 130,
+        "createdAt": "2023-10-28T12:15:00Z",
+        "updatedAt": "2023-11-05T17:40:00Z"
+    },
+    {
+        "id": "e1f2a3b4-c5d6-7890-1234-ef0123456789",
+        "title": "Ergonomic Office Chair",
+        "description": "Improve your posture and comfort with this ergonomic office chair, featuring lumbar support and adjustable armrests.",
+        "price": 18999,
+        "image": "https://picsum.photos/seed/officechair/400/300",
+        "variants": {
+            "color": ["Black", "Grey", "Blue"],
+            "size": ["Standard"]
+        },
+        "stock": 55,
+        "createdAt": "2023-11-15T09:30:00Z",
+        "updatedAt": "2023-11-20T10:00:00Z"
+    },
+    {
+        "id": "f2a3b4c5-d6e7-8901-2345-f0123456789a",
+        "title": "Smart Watch Series 7",
+        "description": "Stay connected and track your fitness goals with the latest Smart Watch. Features GPS and heart rate monitor.",
+        "price": 34900,
+        "image": "https://picsum.photos/seed/smartwatch/400/300",
+        "variants": {
+            "color": ["Midnight Black", "Starlight Silver", "Forest Green"],
+            "size": ["41mm", "45mm"]
+        },
+        "stock": 80,
+        "createdAt": "2023-11-01T14:00:00Z",
+        "updatedAt": "2023-11-18T16:25:00Z"
+    },
+    {
+        "id": "a3b4c5d6-e7f8-9012-3456-0123456789ab",
+        "title": "Noise-Cancelling Earbuds",
+        "description": "Compact and powerful noise-cancelling earbuds for an immersive audio experience anywhere.",
+        "price": 14950,
+        "image": "https://picsum.photos/seed/earbuds/400/300",
+        "variants": {
+            "color": ["White", "Black", "Navy"],
+            "size": ["One Size"]
+        },
+        "stock": 120,
+        "createdAt": "2023-10-05T11:00:00Z",
+        "updatedAt": "2023-11-10T09:30:00Z"
+    },
+    {
+        "id": "b4c5d6e7-f8a9-0123-4567-123456789abc",
+        "title": "Professional DSLR Camera",
+        "description": "Capture stunning photos and videos with this professional-grade DSLR camera. Includes 18-55mm lens.",
+        "price": 79999,
+        "image": "https://picsum.photos/seed/dslrcamera/400/300",
+        "variants": {
+            "color": ["Black"],
+            "size": ["Body + Kit Lens"]
+        },
+        "stock": 25,
+        "createdAt": "2023-09-20T10:15:00Z",
+        "updatedAt": "2023-11-01T12:00:00Z"
+    },
+    {
+        "id": "c5d6e7f8-a9b0-1234-5678-23456789abcd",
+        "title": "Gaming Mouse",
+        "description": "High-precision gaming mouse with customizable buttons and RGB lighting for the ultimate gaming setup.",
+        "price": 5990,
+        "image": "https://picsum.photos/seed/gamingmouse/400/300",
+        "variants": {
+            "color": ["Black", "White"],
+            "size": ["Standard"]
+        },
+        "stock": 95,
+        "createdAt": "2023-11-12T17:00:00Z",
+        "updatedAt": "2023-11-12T17:00:00Z"
+    },
+    {
+        "id": "d6e7f8a9-b0c1-2345-6789-3456789abcde",
+        "title": "Electric Toothbrush",
+        "description": "Advanced electric toothbrush with multiple cleaning modes and a pressure sensor for healthier gums.",
+        "price": 8975,
+        "image": "https://picsum.photos/seed/toothbrush/400/300",
+        "variants": {
+            "color": ["White", "Black", "Pink"],
+            "size": ["One Size"]
+        },
+        "stock": 110,
+        "createdAt": "2023-08-25T08:00:00Z",
+        "updatedAt": "2023-10-30T14:45:00Z"
+    },
+    {
+        "id": "e7f8a9b0-c1d2-3456-7890-456789abcdef",
+        "title": "Travel Backpack",
+        "description": "Durable and spacious travel backpack with multiple compartments and a padded laptop sleeve. Water-resistant.",
+        "price": 7500,
+        "image": "https://picsum.photos/seed/backpack/400/300",
+        "variants": {
+            "color": ["Grey", "Black", "Blue Camo"],
+            "size": ["40L", "50L"]
+        },
+        "stock": 70,
+        "createdAt": "2023-07-10T15:20:00Z",
+        "updatedAt": "2023-11-08T11:10:00Z"
+    },
+    {
+        "id": "f8a9b0c1-d2e3-4567-8901-56789abcdef0",
+        "title": "Air Purifier",
+        "description": "HEPA air purifier that removes 99.97% of airborne particles, including dust, pollen, and smoke. Ideal for bedrooms.",
+        "price": 12999,
+        "image": "https://picsum.photos/seed/airpurifier/400/300",
+        "variants": {
+            "color": ["White"],
+            "size": ["Small Room", "Medium Room"]
+        },
+        "stock": 65,
+        "createdAt": "2023-11-03T10:00:00Z",
+        "updatedAt": "2023-11-19T09:00:00Z"
+    },
+    {
+        "id": "a9b0c1d2-e3f4-5678-9012-6789abcdef01",
+        "title": "Insulated Coffee Mug",
+        "description": "Keep your coffee hot for hours with this stainless steel insulated mug. Leak-proof lid.",
+        "price": 2250,
+        "image": "https://picsum.photos/seed/coffeemug/400/300",
+        "variants": {
+            "color": ["Black", "Stainless Steel", "Navy Blue"],
+            "size": ["12oz", "16oz"]
+        },
+        "stock": 180,
+        "createdAt": "2023-09-01T13:00:00Z",
+        "updatedAt": "2023-09-01T13:00:00Z"
+    },
+    {
+        "id": "b0c1d2e3-f4a5-6789-0123-789abcdef012",
+        "title": "Bluetooth Speaker",
+        "description": "Portable Bluetooth speaker with rich sound and long battery life. Waterproof and dustproof.",
+        "price": 6500,
+        "image": "https://picsum.photos/seed/btspkr/400/300",
+        "variants": {
+            "color": ["Black", "Blue", "Red"],
+            "size": ["Compact"]
+        },
+        "stock": 100,
+        "createdAt": "2023-10-10T16:45:00Z",
+        "updatedAt": "2023-11-14T18:30:00Z"
+    },
+    {
+        "id": "c1d2e3f4-a5b6-7890-1234-89abcdef0123",
+        "title": "Men's Leather Wallet",
+        "description": "Slim and stylish genuine leather wallet with multiple card slots and RFID blocking technology.",
+        "price": 2999,
+        "image": "https://picsum.photos/seed/wallet/400/300",
+        "variants": {
+            "color": ["Black", "Brown", "Tan"],
+            "size": ["Slim"]
+        },
+        "stock": 150,
+        "createdAt": "2023-08-15T09:00:00Z",
+        "updatedAt": "2023-11-01T10:20:00Z"
+    },
+    {
+        "id": "d2e3f4a5-b6c7-8901-2345-9abcdef01234",
+        "title": "Reusable Shopping Bags",
+        "description": "Set of 5 durable and foldable reusable shopping bags. Eco-friendly alternative to plastic bags.",
+        "price": 1550,
+        "image": "https://picsum.photos/seed/shoppingbags/400/300",
+        "variants": {
+            "color": ["Assorted Patterns"],
+            "size": ["Large"]
+        },
+        "stock": 220,
+        "createdAt": "2023-06-05T11:30:00Z",
+        "updatedAt": "2023-06-05T11:30:00Z"
+    },
+    {
+        "id": "e3f4a5b6-c7d8-9012-3456-abcdef012345",
+        "title": "Fitness Tracker Band",
+        "description": "Lightweight fitness tracker band that monitors steps, heart rate, and sleep patterns. Water-resistant.",
+        "price": 4995,
+        "image": "https://picsum.photos/seed/fitnesstracker/400/300",
+        "variants": {
+            "color": ["Black", "Blue", "Purple"],
+            "size": ["Adjustable"]
+        },
+        "stock": 130,
+        "createdAt": "2023-11-20T14:00:00Z",
+        "updatedAt": "2023-11-25T09:15:00Z"
+    },
+    {
+        "id": "f4a5b6c7-d8e9-0123-4567-bcdef0123456",
+        "title": "Desk Lamp with USB Port",
+        "description": "Modern LED desk lamp with adjustable brightness, color temperature, and a built-in USB charging port.",
+        "price": 3499,
+        "image": "https://picsum.photos/seed/desklamp/400/300",
+        "variants": {
+            "color": ["White", "Black"],
+            "size": ["Standard"]
+        },
+        "stock": 85,
+        "createdAt": "2023-09-28T16:00:00Z",
+        "updatedAt": "2023-10-15T11:00:00Z"
+    },
+    {
+        "id": "a5b6c7d8-e9f0-1234-5678-cdef01234567",
+        "title": "Hard Shell Suitcase",
+        "description": "Durable hard shell suitcase with 4 spinner wheels and a TSA-approved lock. Ideal for travel.",
+        "price": 9900,
+        "image": "https://picsum.photos/seed/suitcase/400/300",
+        "variants": {
+            "color": ["Silver", "Charcoal", "Rose Gold"],
+            "size": ["Carry-on", "Medium", "Large"]
+        },
+        "stock": 60,
+        "createdAt": "2023-07-18T10:45:00Z",
+        "updatedAt": "2023-11-10T13:30:00Z"
+    },
+    {
+        "id": "b6c7d8e9-f0a1-2345-6789-def012345678",
+        "title": "Silk Pillowcase",
+        "description": "Luxurious 100% mulberry silk pillowcase for smoother hair and skin. Hypoallergenic.",
+        "price": 2599,
+        "image": "https://picsum.photos/seed/pillowcase/400/300",
+        "variants": {
+            "color": ["Ivory", "Champagne", "Silver Grey"],
+            "size": ["Standard", "Queen", "King"]
+        },
+        "stock": 110,
+        "createdAt": "2023-10-02T12:00:00Z",
+        "updatedAt": "2023-10-02T12:00:00Z"
+    },
+    {
+        "id": "c7d8e9f0-a1b2-3456-7890-ef0123456789",
+        "title": "Electric Kettle",
+        "description": "Fast-boiling electric kettle with auto shut-off and boil-dry protection. 1.7-liter capacity.",
+        "price": 4250,
+        "image": "https://picsum.photos/seed/kettle/400/300",
+        "variants": {
+            "color": ["Stainless Steel", "Black"],
+            "size": ["1.7L"]
+        },
+        "stock": 90,
+        "createdAt": "2023-11-08T09:20:00Z",
+        "updatedAt": "2023-11-22T15:00:00Z"
+    },
+    {
+        "id": "d8e9f0a1-b2c3-4567-8901-f0123456789a",
+        "title": "Resistance Bands Set",
+        "description": "Set of 5 resistance bands with varying levels for home workouts and physical therapy.",
+        "price": 1899,
+        "image": "https://picsum.photos/seed/resistancebands/400/300",
+        "variants": {
+            "color": ["Multi-color"],
+            "size": ["Set of 5"]
+        },
+        "stock": 170,
+        "createdAt": "2023-05-25T17:30:00Z",
+        "updatedAt": "2023-10-18T08:45:00Z"
+    },
+    {
+        "id": "e9f0a1b2-c3d4-5678-9012-0123456789ab",
+        "title": "French Press Coffee Maker",
+        "description": "Classic French press coffee maker for a rich, full-bodied brew. Durable borosilicate glass.",
+        "price": 3200,
+        "image": "https://picsum.photos/seed/frenchpress/400/300",
+        "variants": {
+            "color": ["Chrome", "Copper"],
+            "size": ["350ml", "1L"]
+        },
+        "stock": 75,
+        "createdAt": "2023-09-14T11:10:00Z",
+        "updatedAt": "2023-09-14T11:10:00Z"
+    },
+    {
+        "id": "f0a1b2c3-d4e5-6789-0123-123456789abc",
+        "title": "Microfiber Cleaning Cloths",
+        "description": "Pack of 12 ultra-soft microfiber cleaning cloths. Non-abrasive and highly absorbent for all surfaces.",
+        "price": 1295,
+        "image": "https://picsum.photos/seed/microfibercloths/400/300",
+        "variants": {
+            "color": ["Assorted Brights"],
+            "size": ["12x12 inch"]
+        },
+        "stock": 250,
+        "createdAt": "2023-08-01T15:00:00Z",
+        "updatedAt": "2023-11-05T10:00:00Z"
+    },
+    {
+        "id": "0a1b2c3d-4e5f-6789-0123-23456789abcd",
+        "title": "Digital Kitchen Scale",
+        "description": "Precise digital kitchen scale for accurate cooking and baking. Measures in grams, ounces, pounds, and milliliters.",
+        "price": 1999,
+        "image": "https://picsum.photos/seed/kitchenscale/400/300",
+        "variants": {
+            "color": ["Silver", "Black"],
+            "size": ["Standard"]
+        },
+        "stock": 140,
+        "createdAt": "2023-11-28T10:00:00Z",
+        "updatedAt": "2023-12-01T11:30:00Z"
+    },
+    {
+        "id": "1b2c3d4e-5f6a-7890-1234-3456789abcde",
+        "title": "Scented Candle Set",
+        "description": "Set of 3 aromatic scented candles: Lavender, Vanilla, and Ocean Breeze. Long-lasting fragrance.",
+        "price": 2450,
+        "image": "https://picsum.photos/seed/candleset/400/300",
+        "variants": {
+            "color": ["Assorted"],
+            "size": ["3-Pack"]
+        },
+        "stock": 160,
+        "createdAt": "2023-10-12T14:20:00Z",
+        "updatedAt": "2023-11-15T09:00:00Z"
+    },
+    {
+        "id": "2c3d4e5f-6a7b-8901-2345-456789abcdef",
+        "title": "Bamboo Cutting Board Set",
+        "description": "Set of 3 organic bamboo cutting boards in various sizes. Durable, eco-friendly, and gentle on knives.",
+        "price": 2799,
+        "image": "https://picsum.photos/seed/cuttingboard/400/300",
+        "variants": {
+            "color": ["Natural Bamboo"],
+            "size": ["Small, Medium, Large Set"]
+        },
+        "stock": 100,
+        "createdAt": "2023-09-05T13:00:00Z",
+        "updatedAt": "2023-09-05T13:00:00Z"
+    },
+    {
+        "id": "3d4e5f6a-7b8c-9012-3456-56789abcdef0",
+        "title": "Portable Blender",
+        "description": "Compact and rechargeable portable blender for smoothies and shakes on the go. USB charging.",
+        "price": 3990,
+        "image": "https://picsum.photos/seed/portableblender/400/300",
+        "variants": {
+            "color": ["Pink", "Blue", "Green"],
+            "size": ["380ml"]
+        },
+        "stock": 90,
+        "createdAt": "2023-12-01T08:15:00Z",
+        "updatedAt": "2023-12-03T10:00:00Z"
+    },
+    {
+        "id": "4e5f6a7b-8c9d-0123-4567-6789abcdef01",
+        "title": "Memory Foam Bath Mat",
+        "description": "Soft and absorbent memory foam bath mat for a comfortable and non-slip bathroom experience.",
+        "price": 1675,
+        "image": "https://picsum.photos/seed/bathmat/400/300",
+        "variants": {
+            "color": ["Grey", "Beige", "Navy"],
+            "size": ["20x32 inch"]
+        },
+        "stock": 180,
+        "createdAt": "2023-08-20T10:00:00Z",
+        "updatedAt": "2023-11-10T14:30:00Z"
+    },
+    {
+        "id": "5f6a7b8c-9d0e-1234-5678-789abcdef012",
+        "title": "Wall-Mounted Spice Rack",
+        "description": "Stainless steel wall-mounted spice rack to organize your kitchen spices efficiently. Easy to install.",
+        "price": 2200,
+        "image": "https://picsum.photos/seed/spicerack/400/300",
+        "variants": {
+            "color": ["Silver"],
+            "size": ["4-Tier"]
+        },
+        "stock": 70,
+        "createdAt": "2023-07-25T16:50:00Z",
+        "updatedAt": "2023-07-25T16:50:00Z"
+    },
+    {
+        "id": "6a7b8c9d-0e1f-2345-6789-89abcdef0123",
+        "title": "Gardening Tool Set",
+        "description": "Durable 7-piece gardening tool set with ergonomic handles, including trowel, transplanter, and cultivator.",
+        "price": 3150,
+        "image": "https://picsum.photos/seed/gardentools/400/300",
+        "variants": {
+            "color": ["Green/Black"],
+            "size": ["7-Piece Set"]
+        },
+        "stock": 115,
+        "createdAt": "2023-04-10T09:00:00Z",
+        "updatedAt": "2023-10-05T11:45:00Z"
+    },
+    {
+        "id": "7b8c9d0e-1f2a-3456-7890-9abcdef01234",
+        "title": "Car Phone Mount",
+        "description": "Universal car phone mount with strong suction cup and 360-degree rotation for safe hands-free navigation.",
+        "price": 1499,
+        "image": "https://picsum.photos/seed/carphonemount/400/300",
+        "variants": {
+            "color": ["Black"],
+            "size": ["Universal"]
+        },
+        "stock": 200,
+        "createdAt": "2023-11-05T18:00:00Z",
+        "updatedAt": "2023-11-20T12:10:00Z"
+    },
+    {
+        "id": "8c9d0e1f-2a3b-4567-8901-abcdef012345",
+        "title": "Weighted Blanket",
+        "description": "Comforting weighted blanket designed to reduce stress and improve sleep quality. Made with breathable cotton.",
+        "price": 6995,
+        "image": "https://picsum.photos/seed/weightedblanket/400/300",
+        "variants": {
+            "color": ["Dark Grey", "Navy Blue"],
+            "size": ["15 lbs", "20 lbs"]
+        },
+        "stock": 50,
+        "createdAt": "2023-10-20T12:30:00Z",
+        "updatedAt": "2023-11-25T17:00:00Z"
+    },
+    {
+        "id": "9d0e1f2a-3b4c-5678-9012-bcdef0123456",
+        "title": "Glass Food Storage Containers",
+        "description": "Set of 10 glass food storage containers with airtight lids. Microwave, oven, and dishwasher safe.",
+        "price": 3599,
+        "image": "https://picsum.photos/seed/foodcontainers/400/300",
+        "variants": {
+            "color": ["Clear/Blue Lids"],
+            "size": ["Assorted Sizes Set"]
+        },
+        "stock": 130,
+        "createdAt": "2023-09-18T15:00:00Z",
+        "updatedAt": "2023-09-18T15:00:00Z"
+    }
+]
