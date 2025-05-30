@@ -91,10 +91,7 @@ export const createOrderSchema = orderSchema.omit({
     updatedAt: true,
 });
 
-export type Order = z.infer<typeof orderSchema>;
-export type CreateOrder = z.infer<typeof createOrderSchema>;
-
-export const checkoutFormSchema = createOrderSchema.extend({
+export const checkoutSchema = createOrderSchema.extend({
     cardNumber: z
         .string({
             required_error: "Card number is required",
@@ -132,4 +129,6 @@ export const checkoutFormSchema = createOrderSchema.extend({
         .regex(/^[0-9]{3}$/, "Invalid CVV format"),
 });
 
-export type CheckoutFormData = z.infer<typeof checkoutFormSchema>;
+export type Order = z.infer<typeof orderSchema>;
+export type CreateOrder = z.infer<typeof createOrderSchema>;
+export type Checkout = z.infer<typeof checkoutSchema>;

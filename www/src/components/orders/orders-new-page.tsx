@@ -3,12 +3,7 @@
 import { DevJsonCheckoutFiller } from "@/components/dev";
 import { useOrder } from "@/lib/react-query";
 import { convertCentToDollar, formatPriceTag } from "@/lib/utils";
-import {
-    CheckoutFormData,
-    checkoutFormSchema,
-    Order,
-    Product,
-} from "@/lib/validations";
+import { Checkout, checkoutSchema, Order, Product } from "@/lib/validations";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
     parseAsInteger,
@@ -60,8 +55,8 @@ export function OrdersNewPage({ product }: PageProps) {
         )
     );
 
-    const form = useForm<CheckoutFormData>({
-        resolver: zodResolver(checkoutFormSchema),
+    const form = useForm<Checkout>({
+        resolver: zodResolver(checkoutSchema),
         defaultValues: {
             productId: product.id,
             quantity,
@@ -90,7 +85,7 @@ export function OrdersNewPage({ product }: PageProps) {
     const { useCreate } = useOrder();
     const { mutate: createOrder, isPending: isCreating } = useCreate();
 
-    const onSubmit = (values: CheckoutFormData) => {
+    const onSubmit = (values: Checkout) => {
         const totalAmount = product.price * values.quantity;
         createOrder({ ...values, totalAmount });
     };
@@ -112,7 +107,7 @@ export function OrdersNewPage({ product }: PageProps) {
     const currentSubtotal = (product.price || 0) * quantity;
     const currentTotal = currentSubtotal;
 
-    const defaultDevJson: Partial<CheckoutFormData> = {
+    const defaultDevJson: Partial<Checkout> = {
         customerFullName: "Dev User",
         customerEmail: "dev@example.com",
         customerPhone: "9007163763",

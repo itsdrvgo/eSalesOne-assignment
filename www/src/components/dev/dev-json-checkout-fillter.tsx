@@ -2,14 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { CheckoutFormData } from "@/lib/validations";
+import { Checkout } from "@/lib/validations";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 interface DevJsonCheckoutFillerProps {
-    form: ReturnType<typeof useForm<CheckoutFormData>>;
-    defaultJson?: Partial<CheckoutFormData>;
+    form: ReturnType<typeof useForm<Checkout>>;
+    defaultJson?: Partial<Checkout>;
 }
 
 export function DevJsonCheckoutFiller({
@@ -34,14 +34,10 @@ export function DevJsonCheckoutFiller({
             let fieldsSetCount = 0;
             for (const key in parsedJson) {
                 if (Object.prototype.hasOwnProperty.call(parsedJson, key)) {
-                    form.setValue(
-                        key as keyof CheckoutFormData,
-                        parsedJson[key],
-                        {
-                            shouldValidate: true,
-                            shouldDirty: true,
-                        }
-                    );
+                    form.setValue(key as keyof Checkout, parsedJson[key], {
+                        shouldValidate: true,
+                        shouldDirty: true,
+                    });
                     fieldsSetCount++;
                 }
             }
