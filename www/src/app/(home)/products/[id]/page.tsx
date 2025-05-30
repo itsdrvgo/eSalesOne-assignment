@@ -9,6 +9,7 @@ import {
     EmptyPlaceholderIcon,
     EmptyPlaceholderTitle,
 } from "@/components/ui/empty-placeholder";
+import { Skeleton } from "@/components/ui/skeleton";
 import { DEFAULT_MESSAGES } from "@/config/const";
 import { queries } from "@/lib/queries";
 import { Suspense } from "react";
@@ -20,7 +21,7 @@ interface PageProps {
 export default function Page(props: PageProps) {
     return (
         <GeneralShell>
-            <Suspense>
+            <Suspense fallback={<ProductPageSkeleton />}>
                 <ProductsFetch {...props} />
             </Suspense>
         </GeneralShell>
@@ -60,4 +61,54 @@ async function ProductsFetch({ params }: PageProps) {
             </div>
         );
     }
+}
+
+function ProductPageSkeleton() {
+    return (
+        <div className="container mx-auto px-4 py-8">
+            <div className="grid items-start gap-8 md:grid-cols-2 lg:gap-12">
+                {/* Image Skeleton */}
+                <div className="relative aspect-square overflow-hidden rounded-lg border">
+                    <Skeleton className="size-full" />
+                </div>
+
+                {/* Product Details Skeleton */}
+                <div className="space-y-6">
+                    <div className="space-y-2">
+                        <Skeleton className="h-10 w-3/4" /> {/* Title */}
+                        <Skeleton className="h-8 w-1/4" /> {/* Price */}
+                    </div>
+                    <div className="space-y-4">
+                        <Skeleton className="h-6 w-1/3" />{" "}
+                        {/* Description Title */}
+                        <Skeleton className="h-4 w-full" />
+                        <Skeleton className="h-4 w-full" />
+                        <Skeleton className="h-4 w-5/6" />
+                    </div>
+                    {/* Variants Skeleton (Simplified) */}
+                    <Skeleton className="h-px w-full" /> {/* Separator */}
+                    <div className="space-y-2">
+                        <Skeleton className="h-6 w-1/4" /> {/* Variant Label */}
+                        <div className="flex flex-wrap gap-2">
+                            <Skeleton className="h-10 w-16 rounded-md" />
+                            <Skeleton className="h-10 w-16 rounded-md" />
+                            <Skeleton className="h-10 w-16 rounded-md" />
+                        </div>
+                    </div>
+                    <div className="space-y-2">
+                        <Skeleton className="h-6 w-1/4" /> {/* Variant Label */}
+                        <div className="flex flex-wrap gap-2">
+                            <Skeleton className="h-10 w-12 rounded-md" />
+                            <Skeleton className="h-10 w-12 rounded-md" />
+                        </div>
+                    </div>
+                    <Skeleton className="h-px w-full" /> {/* Separator */}
+                    {/* Buy Button Skeleton */}
+                    <div>
+                        <Skeleton className="h-12 w-full" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }

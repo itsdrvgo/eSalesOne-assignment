@@ -9,6 +9,7 @@ import {
     EmptyPlaceholderIcon,
     EmptyPlaceholderTitle,
 } from "@/components/ui/empty-placeholder";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
     DEFAULT_MESSAGES,
     DEFAULT_PAGINATION_LIMIT,
@@ -27,7 +28,7 @@ interface PageProps {
 export default function Page(props: PageProps) {
     return (
         <GeneralShell>
-            <Suspense>
+            <Suspense fallback={<ProductsSkeleton />}>
                 <ProductsFetch {...props} />
             </Suspense>
         </GeneralShell>
@@ -70,4 +71,30 @@ async function ProductsFetch({ searchParams }: PageProps) {
             </div>
         );
     }
+}
+
+function ProductsSkeleton() {
+    return (
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {Array.from({ length: 16 }).map((_, i) => (
+                <ProductCardSkeleton key={i} />
+            ))}
+        </div>
+    );
+}
+
+function ProductCardSkeleton() {
+    return (
+        <div className="block overflow-hidden rounded-lg border bg-card shadow-sm">
+            <Skeleton className="h-48 w-full" />
+            <div className="p-4">
+                <Skeleton className="h-6 w-3/4" />
+                <Skeleton className="mt-1 h-4 w-full" />
+                <div className="mt-3 flex items-center justify-between">
+                    <Skeleton className="h-8 w-1/4" />
+                    <Skeleton className="h-9 w-20" />
+                </div>
+            </div>
+        </div>
+    );
 }

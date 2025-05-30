@@ -10,6 +10,7 @@ import {
     EmptyPlaceholderTitle,
 } from "@/components/ui/empty-placeholder";
 import { Separator } from "@/components/ui/separator";
+import { Skeleton } from "@/components/ui/skeleton";
 import { queries } from "@/lib/queries";
 import {
     cn,
@@ -28,7 +29,7 @@ interface PageProps {
 export default function Page(props: PageProps) {
     return (
         <GeneralShell>
-            <Suspense>
+            <Suspense fallback={<OrderPageSkeleton />}>
                 <OrderFetch {...props} />
             </Suspense>
         </GeneralShell>
@@ -227,6 +228,63 @@ function OrderPage({ order }: { order: Order & { product: Product } }) {
                     <Button asChild>
                         <Link href="/">Back to Home</Link>
                     </Button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+function OrderPageSkeleton() {
+    return (
+        <div className="flex justify-center py-8">
+            <div className="w-full max-w-2xl rounded-lg border bg-card p-6 shadow-lg md:p-8">
+                <div className="mb-6 text-center">
+                    <Skeleton className="mx-auto h-8 w-3/4" />
+                    <Skeleton className="mx-auto mt-2 h-4 w-1/2" />{" "}
+                </div>
+
+                <div className="space-y-6">
+                    <div>
+                        <Skeleton className="mb-2 h-6 w-1/3" />{" "}
+                        <div className="space-y-2 text-sm">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-3/4" />
+                            <Skeleton className="h-4 w-1/2" />
+                        </div>
+                    </div>
+
+                    <Separator />
+
+                    <div>
+                        <Skeleton className="mb-2 h-6 w-1/3" />{" "}
+                        <div className="space-y-2 text-sm">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-3/4" />
+                        </div>
+                    </div>
+
+                    <Separator />
+
+                    <div>
+                        <Skeleton className="mb-2 h-6 w-1/3" />{" "}
+                        <Skeleton className="h-4 w-1/4" />
+                    </div>
+
+                    <Separator />
+
+                    <div>
+                        <Skeleton className="mb-2 h-6 w-1/3" />{" "}
+                        <div className="grid grid-cols-1 gap-x-4 gap-y-2 text-sm sm:grid-cols-2">
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-full" />
+                            <Skeleton className="h-4 w-full sm:col-span-2" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-8 flex justify-center">
+                    <Skeleton className="h-10 w-32" />
                 </div>
             </div>
         </div>
